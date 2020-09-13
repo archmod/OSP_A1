@@ -33,6 +33,6 @@ std::vector<Process> FileHandler::readToVector() {
 
 void FileHandler::displayProcesses(std::vector<Process> &completed) {
     for(unsigned int i = 0; i < completed.size(); i++) {
-        std::cout << "process: " << completed[i].id << ", " << completed[i].burstTime << ", " << completed[i].arrivalTime << ", " << completed[i].start << std::endl;
+        std::cout << "process: " << completed[i].id << ", " << completed[i].burstTime << ", " << completed[i].arrivalTime << ", " << completed[i].start << ", finished " << completed[i].end << std::endl;
     }
 }
